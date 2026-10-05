@@ -49,12 +49,38 @@ function pagesTable(pages) {
   return ['| Page | About |', '| --- | --- |', ...pages.map(page => `| ${link(page.title, page.url)} | ${plain(page.description)} |`)].join('\n');
 }
 
+function isExcludedPage(url, config) {
+  const safe = publicUrl(url);
+  return safe && (config.exclude_page_slugs ?? []).includes(new URL(safe).hostname.split('.')[0]);
+}
+
+function visiblePages(pages, config) {
+  return (pages ?? []).filter(page => !isExcludedPage(page.url, config));
+}
+
+function benchmarkGroups(config) {
+  return (config.benchmark_groups ?? []).map(group => ({ ...group, pages: visiblePages(group.pages, config) })).filter(group => group.pages.length);
+}
+
+function renderBenchmarks(config, level) {
+  const groups = benchmarkGroups(config);
+  if (!groups.length) return [];
+  const lines = [`${'#'.repeat(level)} BENCHMARKS`, ''];
+  for (const group of groups) {
+    lines.push(`${'#'.repeat(level + 1)} ${plain(group.title)}`, '');
+    if (group.description) lines.push(plain(group.description), '');
+    lines.push(pagesTable(group.pages), '');
+  }
+  return lines;
+}
+
 export function collectOpenSourcePages(eligible, config) {
-  const pages = [...(config.open_source_pages ?? [])];
-  const used = new Set(pages.map(page => publicUrl(page.url)));
+  const reserved = new Set([...visiblePages(config.web_pages, config), ...benchmarkGroups(config).flatMap(group => group.pages)].map(page => publicUrl(page.url)));
+  const pages = visiblePages(config.open_source_pages, config).filter(page => !reserved.has(publicUrl(page.url)));
+  const used = new Set([...reserved, ...pages.map(page => publicUrl(page.url))]);
   for (const repo of [...eligible].sort((a, b) => b.stargazers_count - a.stargazers_count || a.name.localeCompare(b.name, 'en'))) {
     const url = publicUrl(repo.homepage);
-    if (url && !used.has(url)) {
+    if (url && !used.has(url) && !isExcludedPage(url, config)) {
       pages.push({ title: repo.name, url, description: config.descriptions?.[repo.name] ?? repo.description ?? '', repository: repo.html_url });
       used.add(url);
     }
@@ -72,7 +98,7 @@ export function renderIndex(selection, config) {
   }
   if (!recent.length) lines.push('More projects are on the way.');
   lines.push('', `[View all public repositories →](https://github.com/${config.owner}?tab=repositories&sort=stargazers)`, '',
-    '### WEB PAGES', '', pagesTable(config.web_pages), '', '### OPEN-SOURCE PAGES', '');
+    '### WEB PAGES', '', pagesTable(visiblePages(config.web_pages, config)), '', ...renderBenchmarks(config, 3), '### OPEN-SOURCE PAGES', '');
   const openSourcePages = collectOpenSourcePages(eligible, config);
   if (openSourcePages.length) lines.push(pagesTable(openSourcePages), '');
   lines.push(`[Browse the web & open-source showcase →](https://github.com/${config.owner}/${config.owner}/blob/main/PROJECTS.md)`, '',
@@ -87,11 +113,11 @@ export function replaceIndex(readme, index) {
   return readme.slice(0, readme.indexOf(START) + START.length) + '\n\n' + index + '\n\n' + readme.slice(readme.indexOf(END));
 }
 
-function renderShowcase(selection, config) {
+export function renderShowcase(selection, config) {
   const openSourcePages = collectOpenSourcePages(selection.eligible, config);
   return [
     '# WEB & OPEN-SOURCE SHOWCASE', '', `[← GitHub profile](https://github.com/${config.owner})`, '',
-    '## Web pages', '', pagesTable(config.web_pages), '', '## Open-source pages', '',
+    '## Web pages', '', pagesTable(visiblePages(config.web_pages, config)), '', ...renderBenchmarks(config, 2), '## Open-source pages', '',
     openSourcePages.length ? pagesTable(openSourcePages) : '프로젝트 소개, 문서, 데모, GitHub Pages를 모아둘 공간입니다.', '',
     '공개 원본 저장소의 About → Website에 주소를 등록하면 이 목록과 프로필에 자동으로 추가됩니다. 포크·보관 저장소는 제외합니다.', '',
     '저장소와 별개로 만든 오픈소스 소개 페이지는 `profile.config.json`의 `open_source_pages`에 추가할 수 있습니다.', '',

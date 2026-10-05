@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { selectRepositories, collectOpenSourcePages, renderIndex, replaceIndex } from './update-profile.mjs';
+import { selectRepositories, collectOpenSourcePages, renderIndex, renderShowcase, replaceIndex } from './update-profile.mjs';
 
 const config = { owner: 'Burntgogi', top_count: 4, recent_count: 1, web_pages: [], open_source_pages: [] };
 const repo = (name, stars, pushed, extra = {}) => ({ name, stargazers_count: stars, pushed_at: pushed, owner: { login: 'Burntgogi' }, visibility: 'public', html_url: `https://github.com/Burntgogi/${name}`, ...extra });
@@ -42,4 +42,24 @@ test('preserves surrounding README, escapes descriptions, and fails closed on mi
   assert.ok(updated.endsWith('\nFooter'));
   assert.equal(replaceIndex(updated, output), updated);
   assert.throws(() => replaceIndex('missing', output), /marker/);
+});
+
+test('keeps benchmarks grouped in both outputs and exclusions survive homepage collection', () => {
+  const groupedConfig = {
+    ...config,
+    exclude_page_slugs: ['gamheim', 'ai2040'],
+    web_pages: [{ title: 'Avatar', url: 'https://avatar.example/' }, { title: 'Excluded game', url: 'https://gamheim.example/' }],
+    benchmark_groups: [{ title: 'Reasoning', pages: [{ title: 'Caps', url: 'https://caps.example/' }] }, { title: 'Pagoda', pages: [{ title: 'Model', url: 'https://model.example/' }, { title: 'Excluded AI', url: 'https://ai2040.example/report' }] }],
+    open_source_pages: [{ title: 'Excluded manual', url: 'https://gamheim.example/docs' }]
+  };
+  const selection = selectRepositories([repo('game', 3, '2026-10-05', { homepage: 'https://gamheim.example/demo' }), repo('ai', 2, '2026-10-05', { homepage: 'https://ai2040.example/' }), repo('benchmark', 1, '2026-10-05', { homepage: 'https://caps.example/' }), repo('docs', 0, '2026-10-05', { homepage: 'https://docs.example/' })], groupedConfig);
+  assert.deepEqual(collectOpenSourcePages(selection.eligible, groupedConfig).map(page => page.title), ['docs']);
+  for (const output of [renderIndex(selection, groupedConfig), renderShowcase(selection, groupedConfig)]) {
+    assert.ok(output.indexOf('BENCHMARKS') > output.indexOf('Avatar'));
+    assert.ok(output.indexOf('Reasoning') < output.indexOf('Caps'));
+    assert.ok(output.indexOf('Pagoda') < output.indexOf('Model'));
+    assert.equal(output.split('https://caps.example/').length - 1, 1);
+    assert.ok(!output.includes('gamheim.example'));
+    assert.ok(!output.includes('ai2040.example'));
+  }
 });

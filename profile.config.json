@@ -3,6 +3,10 @@
   "top_count": 4,
   "recent_count": 1,
   "exclude_repositories": [],
+  "exclude_page_slugs": [
+    "gamheim",
+    "ai-2040-korean"
+  ],
   "descriptions": {
     "ai-slop-thresher": "AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬.",
     "codex_oracle": "Codex second-opinion reviews.",
@@ -13,6 +17,16 @@
     "bc250-selective-wgp-unlock": "AMD BC-250 WGP test tools."
   },
   "web_pages": [
+    {
+      "title": "Serio · VTuber",
+      "url": "https://serio-vtuber.serio-ai.chatgpt.site/",
+      "description": "Serio의 표정과 립싱크를 체험하는 아바타 스튜디오."
+    },
+    {
+      "title": "경복궁 근정전 · 일반 3D와 복셀",
+      "url": "https://geunjeongjeon-dot-viewer.serio-ai.chatgpt.site/",
+      "description": "Dot의 근정전 모델을 일반 3D와 복셀로 살펴보는 웹 뷰어."
+    },
     {
       "title": "Grokbot Icon Studio",
       "url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/",
@@ -26,12 +40,56 @@
     {
       "title": "TIBOKAT · @thsottiaux",
       "url": "https://tibokat.serio-ai.chatgpt.site/",
-      "description": "TIBOKAT 웹페이지."
+      "description": "Tibo의 Codex 사용량 초기화 소식을 살펴보는 페이지."
     },
     {
       "title": "ボットでGO! β",
       "url": "https://bot-de-go-beta.serio-ai.chatgpt.site/",
       "description": "철도 노선에 봇과 차량 정보를 함께 더하는 참여형 지도."
+    }
+  ],
+  "benchmark_groups": [
+    {
+      "title": "추론 설정 비교",
+      "description": "추론 강도와 토큰 상한을 바꾼 생성 결과를 비교합니다.",
+      "pages": [
+        {
+          "title": "펠리컨 · Reasoning Effort × Cap",
+          "url": "https://pelican-reasoning-effort-cap.serio-ai.chatgpt.site/",
+          "description": "medium/xhigh와 6K·8K·12K·캡 없음 조건의 원본 결과 재생 비교."
+        },
+        {
+          "title": "Qwen 3.8 Flash Next · Reasoning Cap",
+          "url": "https://qwen38-flash-next-reasoning-cap.serio-ai.chatgpt.site/",
+          "description": "6K·8K·12K·16K 추론 상한에 따른 복셀 생성 결과 비교."
+        }
+      ]
+    },
+    {
+      "title": "복셀 파고다 · 모델별 결과",
+      "description": "파고다와 벚꽃 정원을 생성한 모델별 결과를 함께 살펴봅니다.",
+      "pages": [
+        {
+          "title": "Qwen 3.8 27B · Q5KM",
+          "url": "https://qwen38-27b-q5km-pagoda.serio-ai.chatgpt.site/",
+          "description": "Qwen38_27B_Q5KM_pagoda.html"
+        },
+        {
+          "title": "Qwen 3.8 Flash Next Coder · IQ1M",
+          "url": "https://qwen38-flashnext-coder-iq1m-pagoda.serio-ai.chatgpt.site/",
+          "description": "Qwen38FlashNextCoder_IQ1M_pagoda.html"
+        },
+        {
+          "title": "Sol 6.1 · high",
+          "url": "https://sol-6-1-high-pagoda.serio-ai.chatgpt.site/",
+          "description": "sol_6_1_high_pagoda.html"
+        },
+        {
+          "title": "Qwen 3.8 Flash Next · IQ3",
+          "url": "https://qwen38flashnext-iq3-pagoda.serio-ai.chatgpt.site/",
+          "description": "Qwen38Flashnext_IQ3_pagoda.html"
+        }
+      ]
     }
   ],
   "open_source_pages": []
