@@ -1,0 +1,46 @@
+name: Update profile showcase
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+      - profile.config.json
+      - scripts/**
+      - .github/workflows/update-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-showcase
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check repository selection and rendering
+        run: node --test scripts/update-profile.test.mjs
+      - name: Update profile and project catalogue
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/update-profile.mjs
+      - name: Publish changes if needed
+        run: |
+          if git diff --quiet -- README.md PROJECTS.md; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md PROJECTS.md
+          git commit -m 'Refresh profile repository ranking and showcase'
+          git push

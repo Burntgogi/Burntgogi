@@ -1,0 +1,38 @@
+{
+  "owner": "Burntgogi",
+  "top_count": 4,
+  "recent_count": 1,
+  "exclude_repositories": [],
+  "descriptions": {
+    "ai-slop-thresher": "AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬.",
+    "codex_oracle": "Codex second-opinion reviews.",
+    "Gpt_Codex_HWP": "Safe HWPX authoring and validation.",
+    "Everything_Mew": "Read-only Windows search for agents.",
+    "codex_ponytail": "Minimal Ponytail setup for Codex.",
+    "allsight-local-ai-translator": "Local-first Chrome page translation.",
+    "bc250-selective-wgp-unlock": "AMD BC-250 WGP test tools."
+  },
+  "web_pages": [
+    {
+      "title": "Grokbot Icon Studio",
+      "url": "https://grokbot-icon-studio.serio-ai.chatgpt.site/",
+      "description": "미니멀 봇 아이콘 예시와 제작 프롬프트."
+    },
+    {
+      "title": "솜솜뭉치 딸깍공장",
+      "url": "https://plush-toy.serio-ai.chatgpt.site/",
+      "description": "캐릭터를 봉제인형으로 바꾸는 이미지 예시와 프롬프트."
+    },
+    {
+      "title": "TIBOKAT · @thsottiaux",
+      "url": "https://tibokat.serio-ai.chatgpt.site/",
+      "description": "TIBOKAT 웹페이지."
+    },
+    {
+      "title": "ボットでGO! β",
+      "url": "https://bot-de-go-beta.serio-ai.chatgpt.site/",
+      "description": "철도 노선에 봇과 차량 정보를 함께 더하는 참여형 지도."
+    }
+  ],
+  "open_source_pages": []
+}
