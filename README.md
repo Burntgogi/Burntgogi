@@ -27,7 +27,7 @@
 ### RECENTLY UPDATED
 
 - **[Everything\_Mew](<https://github.com/Burntgogi/Everything_Mew>)** — Read-only Windows search for agents.<br>
-  Last code push: 2026-10-02 · ⭐ 1
+  Last code push: 2026-10-07 · ⭐ 1
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
