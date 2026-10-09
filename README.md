@@ -19,7 +19,7 @@
 
 | Repository | Stars | About |
 | --- | ---: | --- |
-| **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 45 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
+| **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 46 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
 | **[kar-plain](<https://github.com/Burntgogi/kar-plain>)** | ⭐ 43 | A compact Codex skill for explanations in Korean or English: prose, diagrams, web pages, and videos. |
 | **[codex\_oracle](<https://github.com/Burntgogi/codex_oracle>)** | ⭐ 11 | Codex second-opinion reviews. |
 | **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** | ⭐ 5 | Safe HWPX authoring and validation. |
