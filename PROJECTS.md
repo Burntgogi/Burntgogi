@@ -6,6 +6,7 @@
 
 | Page | About |
 | --- | --- |
+| [오비탈 핀볼 레이싱](<https://orbital-pinball-racing.serio-ai.chatgpt.site/>) | 최대 64개의 핀볼이 8개 장애물 구간을 달리는 브라우저 레이싱 게임. 한국어·영어·일본어·중국어 지원. |
 | [Serio · VTuber](<https://serio-vtuber.serio-ai.chatgpt.site/>) | Serio의 표정과 립싱크를 체험하는 아바타 스튜디오. |
 | [경복궁 근정전 · 일반 3D와 복셀](<https://geunjeongjeon-dot-viewer.serio-ai.chatgpt.site/>) | Dot의 근정전 모델을 일반 3D와 복셀로 살펴보는 웹 뷰어. |
 | [Grokbot Icon Studio](<https://grokbot-icon-studio.serio-ai.chatgpt.site/>) | 미니멀 봇 아이콘 예시와 제작 프롬프트. |
