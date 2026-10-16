@@ -18,6 +18,11 @@
   },
   "web_pages": [
     {
+      "title": "오비탈 핀볼 레이싱",
+      "url": "https://orbital-pinball-racing.serio-ai.chatgpt.site/",
+      "description": "최대 64개의 핀볼이 8개 장애물 구간을 달리는 브라우저 레이싱 게임. 한국어·영어·일본어·중국어 지원."
+    },
+    {
       "title": "Serio · VTuber",
       "url": "https://serio-vtuber.serio-ai.chatgpt.site/",
       "description": "Serio의 표정과 립싱크를 체험하는 아바타 스튜디오."
