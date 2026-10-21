@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[Everything\_Mew](<https://github.com/Burntgogi/Everything_Mew>)** — Read-only Windows search for agents.<br>
-  Last code push: 2026-10-07 · ⭐ 2
+- **[Daegu\_WA](<https://github.com/Burntgogi/Daegu_WA>)** — Daegu weather active forcast<br>
+  Last code push: 2026-10-21 · ⭐ 0
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
