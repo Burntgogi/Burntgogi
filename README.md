@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[Daegu\_WA](<https://github.com/Burntgogi/Daegu_WA>)** — Daegu weather active forcast<br>
-  Last code push: 2026-10-21 · ⭐ 0
+- **[allsight-local-ai-translator](<https://github.com/Burntgogi/allsight-local-ai-translator>)** — Local-first Chrome page translation.<br>
+  Last code push: 2026-10-22 · ⭐ 3
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
