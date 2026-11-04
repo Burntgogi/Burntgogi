@@ -19,15 +19,15 @@
 
 | Repository | Stars | About |
 | --- | ---: | --- |
-| **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 48 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
+| **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 49 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
 | **[kar-plain](<https://github.com/Burntgogi/kar-plain>)** | ⭐ 46 | A compact Codex skill for explanations in Korean or English: prose, diagrams, web pages, and videos. |
 | **[codex\_oracle](<https://github.com/Burntgogi/codex_oracle>)** | ⭐ 11 | Codex second-opinion reviews. |
-| **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** | ⭐ 5 | Safe HWPX authoring and validation. |
+| **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** | ⭐ 6 | Safe HWPX authoring and validation. |
 
 ### RECENTLY UPDATED
 
-- **[Daegu\_WA](<https://github.com/Burntgogi/Daegu_WA>)** — Daegu weather active forcast<br>
-  Last code push: 2026-10-25 · ⭐ 0
+- **[nikke-launcher-checker](<https://github.com/Burntgogi/nikke-launcher-checker>)** — Windows checker for known NIKKE PC launcher compromise traces<br>
+  Last code push: 2026-11-04 · ⭐ 2
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
