@@ -27,7 +27,7 @@
 ### RECENTLY UPDATED
 
 - **[nikke-launcher-checker](<https://github.com/Burntgogi/nikke-launcher-checker>)** — Windows checker for known NIKKE PC launcher compromise traces<br>
-  Last code push: 2026-11-04 · ⭐ 2
+  Last code push: 2026-11-05 · ⭐ 2
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
