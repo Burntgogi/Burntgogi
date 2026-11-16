@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[Daegu\_WA](<https://github.com/Burntgogi/Daegu_WA>)** — Daegu weather active forcast<br>
-  Last code push: 2026-11-13 · ⭐ 0
+- **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** — Strata용 Qwen 3.8 Flash Next 한국어 출력 제약<br>
+  Last code push: 2026-11-16 · ⭐ 5
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
