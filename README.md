@@ -22,12 +22,12 @@
 | **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 49 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
 | **[kar-plain](<https://github.com/Burntgogi/kar-plain>)** | ⭐ 46 | A compact Codex skill for explanations in Korean or English: prose, diagrams, web pages, and videos. |
 | **[codex\_oracle](<https://github.com/Burntgogi/codex_oracle>)** | ⭐ 11 | Codex second-opinion reviews. |
-| **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** | ⭐ 6 | Safe HWPX authoring and validation. |
+| **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** | ⭐ 7 | Strata용 Qwen 3.8 Flash Next 한국어 출력 제약 |
 
 ### RECENTLY UPDATED
 
-- **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** — Strata용 Qwen 3.8 Flash Next 한국어 출력 제약<br>
-  Last code push: 2026-11-16 · ⭐ 5
+- **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** — Safe HWPX authoring and validation.<br>
+  Last code push: 2026-11-13 · ⭐ 6
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
