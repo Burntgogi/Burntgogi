@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** — Safe HWPX authoring and validation.<br>
-  Last code push: 2026-11-13 · ⭐ 6
+- **[dsh-locale-ko](<https://github.com/Burntgogi/dsh-locale-ko>)** — DeepSeek Harness 한국어 플러그인 \(비공식 커뮤니티 프로젝트\)<br>
+  Last code push: 2026-11-20 · ⭐ 5
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
