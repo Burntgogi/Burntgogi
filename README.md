@@ -22,12 +22,12 @@
 | **[ai-slop-thresher](<https://github.com/Burntgogi/ai-slop-thresher>)** | ⭐ 49 | AI Slop 탈곡기 · 한국어 글의 AI 말투와 과잉 설명을 다듬는 Codex 스킬. |
 | **[kar-plain](<https://github.com/Burntgogi/kar-plain>)** | ⭐ 46 | A compact Codex skill for explanations in Korean or English: prose, diagrams, web pages, and videos. |
 | **[codex\_oracle](<https://github.com/Burntgogi/codex_oracle>)** | ⭐ 11 | Codex second-opinion reviews. |
-| **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** | ⭐ 7 | Strata용 Qwen 3.8 Flash Next 한국어 출력 제약 |
+| **[dsh-locale-ko](<https://github.com/Burntgogi/dsh-locale-ko>)** | ⭐ 7 | DeepSeek Harness 한국어 플러그인 \(비공식 커뮤니티 프로젝트\) |
 
 ### RECENTLY UPDATED
 
-- **[dsh-locale-ko](<https://github.com/Burntgogi/dsh-locale-ko>)** — DeepSeek Harness 한국어 플러그인 \(비공식 커뮤니티 프로젝트\)<br>
-  Last code push: 2026-11-20 · ⭐ 6
+- **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** — Strata용 Qwen 3.8 Flash Next 한국어 출력 제약<br>
+  Last code push: 2026-11-16 · ⭐ 7
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
