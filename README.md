@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[qwen38-fn-ko-output](<https://github.com/Burntgogi/qwen38-fn-ko-output>)** — Strata용 Qwen 3.8 Flash Next 한국어 출력 제약<br>
-  Last code push: 2026-11-16 · ⭐ 7
+- **[koreaciv](<https://github.com/Burntgogi/koreaciv>)** — 공공 통계로 그린 대한민국 전략 지도 — koreaciv · 신여지도 新輿地圖<br>
+  Last code push: 2026-11-27 · ⭐ 0
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
@@ -66,6 +66,10 @@
 | [Qwen 3.8 Flash Next · IQ3](<https://qwen38flashnext-iq3-pagoda.serio-ai.chatgpt.site/>) | Qwen38Flashnext\_IQ3\_pagoda.html |
 
 ### OPEN-SOURCE PAGES
+
+| Page | About |
+| --- | --- |
+| [koreaciv](<https://burntgogi.github.io/koreaciv/>) | 공공 통계로 그린 대한민국 전략 지도 — koreaciv · 신여지도 新輿地圖 |
 
 [Browse the web & open-source showcase →](https://github.com/Burntgogi/Burntgogi/blob/main/PROJECTS.md)
 

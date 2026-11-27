@@ -38,7 +38,9 @@
 
 ## Open-source pages
 
-프로젝트 소개, 문서, 데모, GitHub Pages를 모아둘 공간입니다.
+| Page | About |
+| --- | --- |
+| [koreaciv](<https://burntgogi.github.io/koreaciv/>) | 공공 통계로 그린 대한민국 전략 지도 — koreaciv · 신여지도 新輿地圖 |
 
 공개 원본 저장소의 About → Website에 주소를 등록하면 이 목록과 프로필에 자동으로 추가됩니다. 포크·보관 저장소는 제외합니다.
 
