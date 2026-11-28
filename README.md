@@ -26,8 +26,8 @@
 
 ### RECENTLY UPDATED
 
-- **[koreaciv](<https://github.com/Burntgogi/koreaciv>)** — 공공 통계로 그린 대한민국 전략 지도 — koreaciv · 신여지도 新輿地圖<br>
-  Last code push: 2026-11-27 · ⭐ 0
+- **[Gpt\_Codex\_HWP](<https://github.com/Burntgogi/Gpt_Codex_HWP>)** — Safe HWPX authoring and validation.<br>
+  Last code push: 2026-11-27 · ⭐ 6
 
 [View all public repositories →](https://github.com/Burntgogi?tab=repositories&sort=stargazers)
 
